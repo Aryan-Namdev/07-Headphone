@@ -7,11 +7,11 @@
 /* navbar  */
 
 nav{
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 0;
+    padding: 25px;
 
 }
 
@@ -45,9 +45,9 @@ font-family: 'Poppins';
 }
 
 nav img:nth-child(3){
-    width: 180px;
+    /* width: 180px; */
     height: 30px;
-    object-fit: cover;
+    /* object-fit: cover; */
     
 }
 
@@ -214,4 +214,54 @@ nav img:nth-child(3){
 
 .black-dot{
     background-color: #010001;
+}
+
+@media screen and (min-width:414px) and (max-width:720px) {
+
+    .nav-items{
+        display: none;
+    }
+
+    .intro-section{
+        flex-direction: column;
+    }
+
+    .action-btn{
+        display: none;
+    }
+
+    .discount{
+        display: none;
+    }
+
+    .discount-content{
+        display: none;
+    }
+
+    .text{
+        width: 100%;
+        text-align: center;
+    }
+
+    .headphone-div>img:nth-child(3){
+        z-index: -3;
+        position: absolute;
+        left: 0;
+        /* right: 20px; */
+        height: 300px;
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+
+    .right-section{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        position:relative;
+        width: 100%;   
+    }
+
+
+    
 }
